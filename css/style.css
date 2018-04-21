@@ -17,11 +17,14 @@
 .container-fluid nav .navbar-brand {
   color: #92288D;
 }
-.container-fluid nav .navbar-nav li a {
-  color: #fff !important;
+.container-fluid nav .navbar-nav li .nav-link {
+  color: #fff;
+  padding: 0 20px;
 }
-.container-fluid nav .navbar-nav li:hover {
-  color: #0f0f0f !important;
+.container-fluid nav .navbar-nav li .nav-link:hover {
+  text-decoration: none;
+  background: #fff;
+  color: #ba33b4 !important;
 }
 
 #main {
@@ -32,13 +35,16 @@
 #main .carousel-inner {
   width: 100%;
 }
-#main .carousel-inner .carousel-inner img {
+#main .carousel-inner .carousel-item img {
   width: 100%;
   height: 100%;
 }
+#main .procare-slider {
+  width: 100%;
+}
 #main .services {
   width: 100%;
-  background: url(../img/bg.jpeg) no-repeat center center fixed;
+  background: #92298B no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -50,7 +56,8 @@
   background: transparent;
 }
 #main .services .col-lg-4 .service1 {
-  background: url(../img/service_texture.jpeg) no-repeat center center fixed;
+  filter: alpha(Opacity=40);
+  background: url("../img/bg2.jpg") repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -59,9 +66,6 @@
   vertical-align: middle;
   padding: 10px;
   height: 180px;
-  display: block;
-  vertical-align: middle;
-  border: 4px solid #000;
   border-radius: 10px;
 }
 #main .services .col-lg-4 .service1 i {
@@ -70,6 +74,7 @@
   color: #92288d;
 }
 #main .services .col-lg-4 .service1 h3 {
+  font-size: 20px;
   font-family: "Merriweather", serif;
   text-align: center;
   vertical-align: middle;
@@ -77,4 +82,47 @@
 #main .services .col-lg-4 .service1 p {
   font-family: "Lato", sans-serif;
   color: #000;
+}
+#main .testimonials {
+  width: 100%;
+}
+#main .testimonials .col-lg-4 {
+  padding: 10px;
+}
+#main .testimonials .col-lg-4 .card {
+  padding: 10px;
+  width: 100%;
+  border: 2px solid #92288d;
+  text-align: center;
+}
+#main .testimonials .col-lg-4 .card .card-img-top {
+  align-items: center;
+  border-radius: 50%;
+  width: 100px;
+  margin: 0 auto;
+}
+#main .testimonials .col-lg-4 .card .btn-primary {
+  background-color: #92288d;
+  border: none;
+}
+#main .testimonials .col-lg-4 .card:hover {
+  box-shadow: 10px 10px 10px #ddd;
+}
+
+footer {
+  background-color: #aaa !important;
+  color: #fff !important;
+}
+footer .col-lg-4 {
+  padding: 10px;
+}
+footer .col-lg-4 li {
+  list-style-type: none;
+}
+footer .col-lg-4 li a {
+  color: inherit;
+}
+footer .col-lg-4 li a:hover {
+  text-decoration: none;
+  color: #6a1d66;
 }

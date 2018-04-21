@@ -1,93 +1,166 @@
-$primary-color:#92288d;
-$font-size:14px;
-$font-family-heading:'Merriweather', serif;
-$font-family-para:'Lato', sans-serif;
-
+$primary-color: #92288d;
+$font-size: 14px;
+$font-family-heading: 'Merriweather', serif;
+$font-family-para: 'Lato', sans-serif;
 
 .container-fluid {
   width: 100%;
   margin: 0 !important;
   padding: 0 !important;
-  nav{
-    font-family:$font-family-heading;
+
+  nav {
+    font-family: $font-family-heading;
     width: 100%;
-  position: absolute;
-  z-index: 99;
-  background-color: rgba(0,0,0,0.4) !important;
-  color: #fff !important;
-  .navbar{
-  position: fixed;
-}
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(0,0,0,0.4) !important;
+    color: #fff !important;
 
-.navbar-brand {
-  color: #92288D;
-}
+    .navbar {
+      position: fixed;
+    }
 
-.navbar-nav {
-  li{
-      a{
-        color: #fff !important;
-}
-      &:hover {
-  color: #0f0f0f !important;
-}
+    .navbar-brand {
+      color: #92288D;
+    }
+
+    .navbar-nav {
+      li {
+        .nav-link {
+          color: #fff ;
+          padding:0 20px;
+
+          &:hover{
+            text-decoration:none;
+              background: #fff;
+            color: lighten($primary-color, 10%) !important;
+
+          }
+
+        }
+
+
+
+      }
     }
   }
-}
 }
 
 #main {
   width: 100%;
   padding: 0;
   margin: 0;
-  .carousel-inner{
-  width: 100%;
-  .carousel-inner img {
-  width: 100%;
-  height: 100%;
-}
-}
 
-.services{
+  .carousel-inner {
     width: 100%;
-    background: url(../img/bg.jpeg) no-repeat center center fixed;
+
+    .carousel-item {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .procare-slider {
+    width: 100%;
+  }
+
+  .services {
+    width: 100%;
+
+    background: #92298B no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    .col-lg-4{
+
+    .col-lg-4 {
       padding: 20px;
-      color:#000;
+      color: #000;
       background: transparent;
-      .service1{
-        background: url(../img/service_texture.jpeg) no-repeat center center absolute;
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
-        -o-background-size: contain;
-        background-size: contain;
 
+      .service1 {
+        filter: alpha(Opacity=40);
+        background: url("../img/bg2.jpg") repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         text-align: center;
-          vertical-align: middle;
+        vertical-align: middle;
         padding: 10px;
-        height:180px;
-            border-radius: 10px;
+        height: 180px;
+        border-radius: 10px;
 
-        i{
+        i {
           font-size: 50px;
-        align-items: center;
+          align-items: center;
           color: $primary-color;
         }
-        h3{
-      font-family:$font-family-heading;
-  text-align: center;
-    vertical-align: middle;
+
+        h3 {
+          font-size: 20px;
+          font-family: $font-family-heading;
+          text-align: center;
+          vertical-align: middle;
         }
 
-        p{
-font-family:$font-family-para;
-          color:#000;
+        p {
+          font-family: $font-family-para;
+          color: #000;
         }
       }
     }
-}
   }
+.testimonials{
+  width: 100%;
+  .col-lg-4{
+    padding: 10px;
+    .card{
+      padding: 10px;
+      width: 100%;
+      border: 2px solid $primary-color;
+      text-align: center;
+      .card-img-top{
+        align-items: center;
+        border-radius: 50%;
+        width:100px;
+        margin: 0 auto;
+
+      }
+
+      .btn-primary{
+        background-color: $primary-color;
+        border: none;
+      }
+      &:hover{
+        box-shadow: 10px 10px 10px #ddd;
+      }
+    }
+  }
+
+}
+}
+footer{
+    background-color: #aaa !important;
+    color: #fff !important;
+    .col-lg-4{
+      padding: 10px;
+      li{
+        list-style-type: none;
+        a{
+          color: inherit;
+          &:hover{
+            text-decoration:none;
+            color: darken($primary-color, 10%);
+
+          }
+
+
+        }
+      }
+      }
+
+
+}

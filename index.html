@@ -18,6 +18,9 @@
 </head>
 
 <body class="container-fluid">
+<header>
+
+
   <nav class="navbar navbar-expand-md bg-dark navbar-dark" data-spy="affix">
     <a class="navbar-brand" href="#"> Procare Accounting solutions </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -40,11 +43,12 @@
       </ul>
     </div>
   </nav>
+  </header>
   <div id="main">
     <section class="row procare-slider">
 
 
-      <div id="homeSlider" class="carousel slide" data-ride="carousel">
+      <div id="homeSlider" class="carousel slide row" data-ride="carousel" width="100%">
 
 
         <ul class="carousel-indicators">
@@ -56,13 +60,22 @@
 
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img\slider1.jpg" alt="Los Angeles" width="100%">
+            <img src="img\slider1.jpg" alt="Los Angeles">
+            <div class="carousel-caption">
+              <h1>Slider1</h1>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="img\slider2.jpg" alt="Chicago" width="100%">
+            <img src="img\slider2.jpg" alt="Chicago">
+            <div class="carousel-caption">
+              <h1>Slider2</h1>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="img\slider3.jpg" alt="New York" width="100%">
+            <img src="img\slider3.jpg" alt="New York">
+            <div class="carousel-caption">
+              <h1>Slider3</h1>
+            </div>
           </div>
         </div>
 
@@ -81,6 +94,7 @@
           <div class="col-lg-4 col-md-4">
             <div class="service1">
               <i class="fa fa-suitcase" aria-hidden="true"></i>
+              <p></p>
               <h3>CORPORATE COMPLIANCE AND GOVERNANCE</h3>
 
             </div>
@@ -88,13 +102,15 @@
           <div class="col-lg-4 col-md-4">
             <div class="service1">
               <i class="fa fa-calendar" aria-hidden="true"></i>
+              <p></p>
               <h3>AUDIT AND ASSURANCE</h3>
 
             </div>
           </div>
           <div class="col-lg-4 col-md-4">
             <div class="service1">
-                <i class="fa fa-money" aria-hidden="true"></i>
+              <i class="fa fa-money" aria-hidden="true"></i>
+              <p></p>
               <h3>FUNDING AND RESTRUCTURING</h3>
               <p></p>
             </div>
@@ -103,8 +119,8 @@
         <div class="row">
           <div class="col-lg-4 col-md-4">
             <div class="service1">
-
               <i class="fa fa-handshake-o" aria-hidden="true"></i>
+              <p></p>
               <h3>ADVISORY</h3>
 
             </div>
@@ -113,15 +129,15 @@
             <div class="service1">
 
               <i class="fa fa-users" aria-hidden="true"></i>
-
-                <h3>ACCOUNTING AND OUTSOURCING</h3>
-                <p></p>
+              <p></p>
+              <h3>ACCOUNTING AND OUTSOURCING</h3>
+              <p></p>
             </div>
           </div>
           <div class="col-lg-4 col-md-4">
             <div class="service1">
               <i class="fa fa-balance-scale" aria-hidden="true"></i>
-
+              <p></p>
               <h3>TAX</h3>
               <p></p>
             </div>
@@ -131,8 +147,75 @@
 
       </div>
     </section>
+    <section class="testimonials row">
+      <div class="container">
+        <div class="row">
+
+
+          <div class="col-lg-4 col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="img\profile.png" alt="card image">
+              <div class="card-body">
+                <h4 class="card-title">Dinakara</h4>
+                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary">Contact</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+
+            <div class="card">
+              <img class="card-img-top" src="img\profile.png" alt="card image" >
+              <div class="card-body">
+                <h4 class="card-title">Karthik Beede</h4>
+                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary">Contact</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="img\profile.png" alt="card image" >
+              <div class="card-body">
+                <h4 class="card-title">Anjana Adiga</h4>
+                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </section>
+
 
   </div>
+  <footer >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="img\pc.png" alt="Company Logo">
+        </div>
+        <div class="col-lg-4">
+          <ul>
+            <li> <a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms And Condition</a></li>
+            <li><a href="#">Site map</a></li>
+
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          Info
+        </div>
+
+
+      </div>
+    </div>
+
+  </footer>
 </body>
 
 </html>
