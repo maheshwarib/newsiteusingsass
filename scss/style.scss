@@ -2,13 +2,6 @@ $primary-color: #92288d;
 $font-size: 14px;
 $font-family-heading: 'Merriweather', serif;
 $font-family-para: 'Lato', sans-serif;
-@keyframes animation1 {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
-}
 
 .container-fluid {
   width: 100%;
@@ -89,13 +82,16 @@ $font-family-para: 'Lato', sans-serif;
   }
 
   .services {
+      padding: 60px 0;
     width: 100%;
-    background: #92298B no-repeat center center fixed;
+    background: url("../img/bg2.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
+    h1{
+      color: darken($primary-color, 10%);
+    }
     .col-lg-4 {
       padding: 20px;
       color: #000;
@@ -103,7 +99,7 @@ $font-family-para: 'Lato', sans-serif;
 
       .service1 {
         filter: alpha(Opacity=40);
-        background: url("../img/bg2.jpg") repeat center center scroll;
+        background: url("../img/service_texture.jpeg") repeat center center scroll;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -136,6 +132,10 @@ $font-family-para: 'Lato', sans-serif;
   }
 .testimonials{
   width: 100%;
+  padding: 80px 0;
+  h1{
+    color: $primary-color;
+  }
   .col-lg-4{
     padding: 10px;
     .card{
@@ -168,8 +168,16 @@ box-shadow: 0 0 15px #999;
 footer{
     background-color: #aaa !important;
     color: #fff !important;
-    .col-lg-4{
-      padding: 10px;
+    .col-lg-3,.col-lg-4,.col-lg-2{
+      padding: 20px 0;
+      h3{
+          padding-left: 38px;
+      }
+      .fa{
+        color:$primary-color;
+        padding: 5px 4px;
+      }
+
       li{
         list-style-type: none;
         a{
@@ -179,8 +187,6 @@ footer{
             color: darken($primary-color, 10%);
 
           }
-
-
         }
       }
       }

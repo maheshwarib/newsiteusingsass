@@ -1,30 +1,3 @@
-@keyframes animation1 {
-  0% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-  }
-  25% {
-    background-color: yellow;
-    left: 200px;
-    top: 0px;
-  }
-  50% {
-    background-color: blue;
-    left: 200px;
-    top: 200px;
-  }
-  75% {
-    background-color: green;
-    left: 0px;
-    top: 200px;
-  }
-  100% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-  }
-}
 .container-fluid {
   width: 100%;
   margin: 0 !important;
@@ -81,12 +54,16 @@
   width: 100%;
 }
 #main .services {
+  padding: 60px 0;
   width: 100%;
-  background: #92298B no-repeat center center fixed;
+  background: url("../img/bg2.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+#main .services h1 {
+  color: #6a1d66;
 }
 #main .services .col-lg-4 {
   padding: 20px;
@@ -95,7 +72,7 @@
 }
 #main .services .col-lg-4 .service1 {
   filter: alpha(Opacity=40);
-  background: url("../img/bg2.jpg") repeat center center scroll;
+  background: url("../img/service_texture.jpeg") repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -123,6 +100,10 @@
 }
 #main .testimonials {
   width: 100%;
+  padding: 80px 0;
+}
+#main .testimonials h1 {
+  color: #92288d;
 }
 #main .testimonials .col-lg-4 {
   padding: 10px;
@@ -153,16 +134,23 @@ footer {
   background-color: #aaa !important;
   color: #fff !important;
 }
-footer .col-lg-4 {
-  padding: 10px;
+footer .col-lg-3, footer .col-lg-4, footer .col-lg-2 {
+  padding: 20px 0;
 }
-footer .col-lg-4 li {
+footer .col-lg-3 h3, footer .col-lg-4 h3, footer .col-lg-2 h3 {
+  padding-left: 38px;
+}
+footer .col-lg-3 .fa, footer .col-lg-4 .fa, footer .col-lg-2 .fa {
+  color: #92288d;
+  padding: 5px 4px;
+}
+footer .col-lg-3 li, footer .col-lg-4 li, footer .col-lg-2 li {
   list-style-type: none;
 }
-footer .col-lg-4 li a {
+footer .col-lg-3 li a, footer .col-lg-4 li a, footer .col-lg-2 li a {
   color: inherit;
 }
-footer .col-lg-4 li a:hover {
+footer .col-lg-3 li a:hover, footer .col-lg-4 li a:hover, footer .col-lg-2 li a:hover {
   text-decoration: none;
   color: #6a1d66;
 }
