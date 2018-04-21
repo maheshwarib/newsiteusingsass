@@ -156,7 +156,9 @@ $font-family-para: 'Lato', sans-serif;
         border: none;
       }
       &:hover{
-        box-shadow: 10px 10px 10px #ddd;
+        bo-moz-box-shadow: 0 0 15px #999;
+-webkit-box-shadow: 0 0 15px #999;
+box-shadow: 0 0 15px #999;
       }
     }
   }
