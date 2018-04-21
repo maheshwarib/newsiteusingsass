@@ -59,6 +59,14 @@ $font-family-para: 'Lato', sans-serif;
         width: 100%;
         height: 100%;
       }
+      .carousel-caption{
+        top:45%;
+        bottom:10%;
+        color: $primary-color;
+        text-shadow:2px 1px darken($primary-color,8%);
+
+
+      }
     }
   }
 
@@ -68,7 +76,6 @@ $font-family-para: 'Lato', sans-serif;
 
   .services {
     width: 100%;
-
     background: #92298B no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;

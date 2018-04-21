@@ -39,6 +39,12 @@
   width: 100%;
   height: 100%;
 }
+#main .carousel-inner .carousel-item .carousel-caption {
+  top: 45%;
+  bottom: 10%;
+  color: #92288d;
+  text-shadow: 2px 1px #721f6e;
+}
 #main .procare-slider {
   width: 100%;
 }
