@@ -2,6 +2,13 @@ $primary-color: #92288d;
 $font-size: 14px;
 $font-family-heading: 'Merriweather', serif;
 $font-family-para: 'Lato', sans-serif;
+@keyframes animation1 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
 
 .container-fluid {
   width: 100%;
@@ -64,6 +71,13 @@ $font-family-para: 'Lato', sans-serif;
         bottom:10%;
         color: $primary-color;
         text-shadow:2px 1px darken($primary-color,8%);
+        animation-name: fadeInUp;
+      animation-duration: 4s;
+        h3:first-child {
+    animation-delay: 1s;
+
+  }
+
 
 
       }

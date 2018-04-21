@@ -1,3 +1,30 @@
+@keyframes animation1 {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
 .container-fluid {
   width: 100%;
   margin: 0 !important;
@@ -44,6 +71,11 @@
   bottom: 10%;
   color: #92288d;
   text-shadow: 2px 1px #721f6e;
+  animation-name: fadeInUp;
+  animation-duration: 4s;
+}
+#main .carousel-inner .carousel-item .carousel-caption h3:first-child {
+  animation-delay: 1s;
 }
 #main .procare-slider {
   width: 100%;
