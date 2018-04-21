@@ -101,17 +101,19 @@
 #main .testimonials {
   width: 100%;
   padding: 80px 0;
+  background: #6F4B76 repeat center center scroll;
 }
 #main .testimonials h1 {
   color: #92288d;
 }
 #main .testimonials .col-lg-4 {
-  padding: 10px;
+  padding: 15px 10px;
 }
 #main .testimonials .col-lg-4 .card {
   padding: 10px;
   width: 100%;
   border: 2px solid #92288d;
+  border-radius: 5%;
   text-align: center;
 }
 #main .testimonials .col-lg-4 .card .card-img-top {
@@ -123,6 +125,12 @@
 #main .testimonials .col-lg-4 .card .btn-primary {
   background-color: #92288d;
   border: none;
+}
+#main .testimonials .col-lg-4 .card .btn-primary:hover {
+  bo-moz-box-shadow: 5px 5px 5px #999;
+  -webkit-box-shadow: 5px 5px 5px #999;
+  box-shadow: 5px 5px 5px #999;
+  background-color: #7a2176;
 }
 #main .testimonials .col-lg-4 .card:hover {
   bo-moz-box-shadow: 0 0 15px #999;

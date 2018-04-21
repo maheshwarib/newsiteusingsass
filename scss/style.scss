@@ -99,6 +99,7 @@ $font-family-para: 'Lato', sans-serif;
 
       .service1 {
         filter: alpha(Opacity=40);
+
         background: url("../img/service_texture.jpeg") repeat center center scroll;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -133,15 +134,18 @@ $font-family-para: 'Lato', sans-serif;
 .testimonials{
   width: 100%;
   padding: 80px 0;
+
+  background: #6F4B76 repeat center center scroll;
   h1{
     color: $primary-color;
   }
   .col-lg-4{
-    padding: 10px;
+    padding: 15px 10px;
     .card{
       padding: 10px;
       width: 100%;
       border: 2px solid $primary-color;
+      border-radius: 5%;
       text-align: center;
       .card-img-top{
         align-items: center;
@@ -154,11 +158,18 @@ $font-family-para: 'Lato', sans-serif;
       .btn-primary{
         background-color: $primary-color;
         border: none;
+        &:hover{
+          bo-moz-box-shadow: 5px 5px 5px #999;
+          -webkit-box-shadow: 5px 5px 5px #999;
+          box-shadow: 5px 5px 5px #999;
+            background-color:darken($primary-color, 6%);
+
+        }
       }
       &:hover{
         bo-moz-box-shadow: 0 0 15px #999;
--webkit-box-shadow: 0 0 15px #999;
-box-shadow: 0 0 15px #999;
+        -webkit-box-shadow: 0 0 15px #999;
+        box-shadow: 0 0 15px #999;
       }
     }
   }
