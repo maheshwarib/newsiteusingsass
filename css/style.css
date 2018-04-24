@@ -44,11 +44,17 @@
   bottom: 10%;
   color: #92288d;
   text-shadow: 2px 1px #721f6e;
-  animation-name: fadeInUp;
-  animation-duration: 4s;
+  animation-duration: 6s;
 }
-#main .carousel-inner .carousel-item .carousel-caption h3:first-child {
+#main .carousel-inner .carousel-item .carousel-caption h1:first-child {
   animation-delay: 1s;
+  animation-name: fadeInUp;
+  animation-duration: 3s;
+}
+#main .carousel-inner .carousel-item .carousel-caption Button {
+  animation-delay: 3s;
+  animation-name: ZoomIn;
+  animation-duration: 1s;
 }
 #main .procare-slider {
   width: 100%;

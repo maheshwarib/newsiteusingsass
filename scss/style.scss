@@ -64,13 +64,18 @@ $font-family-para: 'Lato', sans-serif;
         bottom:10%;
         color: $primary-color;
         text-shadow:2px 1px darken($primary-color,8%);
-        animation-name: fadeInUp;
-      animation-duration: 4s;
-        h3:first-child {
+
+      animation-duration: 6s;
+        h1:first-child {
     animation-delay: 1s;
-
-  }
-
+    animation-name: fadeInUp;
+  animation-duration: 3s;
+      }
+      Button{
+  animation-delay: 3s;
+  animation-name: ZoomIn;
+animation-duration: 1s;
+    }
 
 
       }
